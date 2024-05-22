@@ -15,4 +15,10 @@ c<-load("predictive_variable_slideseq_cerebellum.RData")
 write.csv(anterior_rep1,"a1.csv",quote=FALSE,row.names=TRUE)
 ```
 
+find reindex columns 
+```
+df3=pd.read_csv(path+'coords.csv',index_col=0)
+coord=df3.to_numpy()
+df4= pd.read_csv(path+'rctd_doublet.csv',index_col=0)
 newdf= df4.reindex(df3.index)
+```
