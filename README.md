@@ -14,3 +14,5 @@ c<-load("predictive_variable_slideseq_cerebellum.RData")
 #[5] "nodular_rep2"  "nodular_rep3"
 write.csv(anterior_rep1,"a1.csv",quote=FALSE,row.names=TRUE)
 ```
+
+newdf= df4.reindex(df3.index)
