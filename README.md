@@ -1,10 +1,11 @@
+
+```
 install.packages("devtools")
-
 options(timeout = 600000000) ### set this to avoid timeout error
-
 devtools::install_github("dmcable/spacexr", build_vignettes = FALSE)
-
 conda install conda-forge::r-rcppziggurat
+```
+to quickly check that 
 
 ```
 load("predictive_variable_slideseq_cerebellum.RData")
