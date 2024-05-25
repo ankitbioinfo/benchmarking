@@ -22,3 +22,9 @@ coord=df3.to_numpy()
 df4= pd.read_csv(path+'rctd_doublet.csv',index_col=0)
 newdf= df4.reindex(df3.index)
 ```
+
+```
+adata.layers['log'] = np.log(adata.X + 1)
+sc.pp.highly_variable_genes(adata, layer = 'log', n_top_genes = 2048)
+adata=adata[:, adata.var['highly_variable']]
+```
