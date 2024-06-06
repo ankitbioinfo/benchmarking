@@ -28,3 +28,6 @@ adata.layers['log'] = np.log(adata.X + 1)
 sc.pp.highly_variable_genes(adata, layer = 'log', n_top_genes = 2048)
 adata=adata[:, adata.var['highly_variable']]
 ```
+
+
+conda create -n RmultiNicheNet r-essential r-base 
